@@ -15,6 +15,7 @@ Plugin 'fatih/vim-go'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set autoread
 set number
 syntax enable
 "set background=dark
@@ -33,5 +34,6 @@ set number relativenumber
 ""execute pathogen#infect()
 syntax on
 filetype plugin indent on
-vmap <C-x> :!pbcopy<CR>  
-vmap <C-c> :w !pbcopy<CR><CR> 
+vmap <C-x> :!pbcopy<CR>
+vmap <C-c> :w !pbcopy<CR><CR>
+set laststatus=2
